@@ -5,8 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>This is FRONTEND</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="./script.js" defer></script>
 </head>
 <body>
-	<div id="root"></div>
+	<div id="root">
+		<form action="https://mavcsoport.hu" id="add-category">
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name">
+			<label for="category">Category:</label>
+			<input type="text" name="category" id="category">
+			<label for="price">Price:</label>
+			<input type="text" name="price" id="price">
+			<input type="submit" value="Küldés">
+		</form>
+		<p id="success-text"></p>
+	</div>
 </body>
 </html>
