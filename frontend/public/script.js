@@ -7,7 +7,11 @@ form.addEventListener("submit", function(event) {
         category: document.querySelector("#category").value,
         price: parseInt(document.querySelector("#price").value)
     };
-    fetch("/product", {
+    const formData = new FormData()
+    formData.append('fileName', document.querySelector("#fileName").value)
+    formData.append('file', document.querySelector("#file").files[0])
+
+    fetch("/upload", {
         method: 'POST',  
         headers: {
           'Content-Type': 'application/json'
@@ -15,4 +19,8 @@ form.addEventListener("submit", function(event) {
         }, 
         body: JSON.stringify(product) 
       });
+      fetch("/upload-image", {
+        method: 'POST',
+        body: formData
+      })
 });

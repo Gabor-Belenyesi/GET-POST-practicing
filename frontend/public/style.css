@@ -9,3 +9,9 @@ form{
     width: 400px;
     margin: auto;
 }
+label{
+    margin: 10px;
+}
+#submit{
+    margin-top: 20px;
+}

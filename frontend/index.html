@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>This is FRONTEND</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="./script.js" defer></script>
+	<link rel="stylesheet" href="./public/style.css">
+	<script src="./public/script.js" defer></script>
 </head>
 <body>
 	<div id="root">
@@ -17,7 +17,11 @@
 			<input type="text" name="category" id="category">
 			<label for="price">Price:</label>
 			<input type="text" name="price" id="price">
-			<input type="submit" value="Küldés">
+			<label for="file"></label>
+			<input type="file" name="file" id="file">
+			<label for="fileName"></label>
+			<input type="text" id="fileName" name="fileName">
+			<input type="submit" value="Küldés" id="submit">
 		</form>
 		<p id="success-text"></p>
 	</div>
